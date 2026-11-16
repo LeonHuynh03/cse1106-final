@@ -1,0 +1,15 @@
+guu6656@gedeonulony:~/Desktop $ ls
+led  led.c  led.o  temperature_log.csv
+guu6656@gedeonulony:~/Desktop $ gcc -o led led.c -lpigpio
+guu6656@gedeonulony:~/Desktop $ sudo ./led
+Enter temperature 1 (F): 75
+Normal: LED OFF
+Enter temperature 2 (F): 50
+WARNING: LED ON
+Enter temperature 3 (F): 70 
+Normal: LED OFF
+Enter temperature 4 (F): 100
+WARNING: LED ON
+Enter temperature 5 (F): 69
+Normal: LED OFF
+Average temperature: 72.80 F
